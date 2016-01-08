@@ -28,7 +28,8 @@ echo "App installed"
 echo "Starting the app"
 
 adb shell am start com.wordpress.zubeentolani.arjayv010/.WelcomeActivity
-sleep 15
+
+#sleep 15
 
 #echo "Closing mobile"
 #adb shell input keyevent 06
