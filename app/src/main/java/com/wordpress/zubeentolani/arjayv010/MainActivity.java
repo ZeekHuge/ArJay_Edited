@@ -56,7 +56,6 @@ class frameObject implements Comparable{
         this.frameName = frameName;
         this.framePosition = framePos;
         this.frameDetail = frameDet ;
-
     }
 
     @Override
@@ -1027,17 +1026,17 @@ public class MainActivity extends Activity implements DialogBox.DialogBoxListner
 ////            imVw.setBackgroundColor(parseColor("black"));
 //            imVw.setImageResource(R.drawable.character_a);
 ////            imVw.setScaleType(((ImageView) findViewById(R.id.rwImageView)).getScaleType());
-////            imVw.setLayoutParams(findViewById(R.id.rwImageView).getLayoutParams());
-////            imVw.setLayoutParams(new TableRow.MarginLayoutParams(5, 5));
-////
-////
-////            vw.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, 1));
-////            vw.setBackgroundColor(parseColor("black"));
-////            vw.setPadding(20, 20, 20, 20);
-////
-////            btn.setText("butt");
-////            btn.setLayoutParams(findViewById(R.id.rwButton).getLayoutParams());
-////            btn.setBackgroundColor(findViewById(R.id.rwButton).getSolidColor());
+//            imVw.setLayoutParams(findViewById(R.id.rwImageView).getLayoutParams());
+//            imVw.setLayoutParams(new TableRow.MarginLayoutParams(5, 5));
+//
+//
+//            vw.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, 1));
+//            vw.setBackgroundColor(parseColor("black"));
+//            vw.setPadding(20, 20, 20, 20);
+//
+//            btn.setText("butt");
+//            btn.setLayoutParams(findViewById(R.id.rwButton).getLayoutParams());
+//            btn.setBackgroundColor(findViewById(R.id.rwButton).getSolidColor());
 //            btn.setId(i);
 //            btn.setOnClickListener(new View.OnClickListener() {
 //                @Override
@@ -1047,7 +1046,7 @@ public class MainActivity extends Activity implements DialogBox.DialogBoxListner
 //            });
 //
 //
-////            mainTableRow.addView(imVw);
-////            mainTableRow.addView(txView);
-////            mainTableRow.addView(btn);
+//            mainTableRow.addView(imVw);
+//            mainTableRow.addView(txView);
+//            mainTableRow.addView(btn);
 //            mainTable.addView(mainTableRow);

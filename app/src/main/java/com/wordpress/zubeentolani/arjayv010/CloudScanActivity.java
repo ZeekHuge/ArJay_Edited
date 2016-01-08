@@ -326,7 +326,7 @@ public class CloudScanActivity extends Activity implements DialogBox.DialogBoxLi
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Log.i("AlertZeekCloudScan", "inside listView click on " + position);
+                Log.i("AlertZeekCloudScan", "inside navigationListView click on " + position);
                 DialogBox frag = new DialogBox();
                 frag.setValues(parent.getItemAtPosition(position).toString(), columnDataList.get(position), position);
                 frag.show(CloudScanActivity.this.getFragmentManager(), "ManagerZeek");

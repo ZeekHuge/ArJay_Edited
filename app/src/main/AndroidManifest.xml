@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.wordpress.zubeentolani.arjayv010" >
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".FirstActivity"
+            android:name=".WelcomeActivity"
             android:label="@string/app_name" >
             android:windowSoftInputMode="adjustPan"
             <intent-filter>
@@ -27,20 +29,27 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:uiOptions="splitActionBarWhenNarrow"
+        <activity
             android:name=".CloudScanActivity"
-            android:label="Local Device" >
+            android:label="Local Device"
+            android:uiOptions="splitActionBarWhenNarrow" >
             android:windowSoftInputMode="adjustPan"
-            <meta-data android:name="android.support.UI_OPTIONS"
-                android:value="spitActionBarWhenNarrow"/>
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="spitActionBarWhenNarrow" />
+
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
+        <activity
+            android:name=".FirstDetailedActivity"
+            android:label="FirstDetailedActivity" >
+        </activity>
+        <activity
+            android:name=".Level2BaseActivity"
+            android:label="@string/title_activity_level2_base_activty" >
+        </activity>
     </application>
-
-
 
 </manifest>

@@ -1,0 +1,35 @@
+#! /bin/bash
+
+echo "Started runIt"
+echo "Opening mobile"
+
+
+adb shell input keyevent 03
+sleep 1
+adb shell input text 1974
+adb shell input keyevent 66
+
+
+echo "Mobile opened"
+echo "Starting Gradle to build"
+
+gradle --daemon assembleDebug
+
+#adb shell input keyevent 03  
+#adb shell input text 1974
+#adb shell input keyevent 66
+
+echo "Build complete."
+echo "Installing the app"
+
+adb install -r app/build/outputs/apk/app-debug.apk 
+
+echo "App installed"
+echo "Starting the app"
+
+adb shell am start com.wordpress.zubeentolani.arjayv010/.WelcomeActivity
+sleep 15
+
+#echo "Closing mobile"
+#adb shell input keyevent 06
+
